@@ -3,6 +3,7 @@
   <head>
     <title>DC Comics Characters</title>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="characters.js"></script>
   </head>
   <body>
     <h1>DC Comics Characters</h1>
@@ -32,9 +33,10 @@
         </ul>
         <form>
           Character: <input type="text" id="characterName"><br>
-          <button type="button" id="doneButton">Done</button>
+          <button type="button" id="doneButton" onclick="characterSelection();" >Done</button>
+          <p id="error"></p>
         </form>
-        <button type="button" id="randomButton">Random Character</button>
+        <button type="button" id="randomButton" onclick="randSelection();">Random Character</button>
       </div>
     </div>
   </body>

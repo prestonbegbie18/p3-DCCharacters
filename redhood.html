@@ -3,6 +3,7 @@
   <head>
     <title>DC Comics Characters: Red Hood</title>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="characters.js"></script>
   </head>
   <body>
     <h1>Red Hood</h1>
@@ -53,6 +54,12 @@
             Fun fact: The Red Hood was the Joker before Jason took on the identity
           </li>
         </ul>
+        <form>
+          Character: <input type="text" id="characterName"><br>
+          <button type="button" id="doneButton" onclick="characterSelection();" >Done</button>
+          <p id="error"></p>
+        </form>
+        <button type="button" id="randomButton" onclick="randSelection();">Random Character</button>
       </div>
     </div>
   </body>
