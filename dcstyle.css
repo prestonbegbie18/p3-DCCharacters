@@ -1,0 +1,12 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+.backstory{
+  font-family: "Courier New", Monospace;
+  text-indent: 40px;
+}

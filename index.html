@@ -4,6 +4,7 @@
     <title>DC Comics Characters</title>
     <meta charset="UTF-8">
     <script type="text/javascript" src="characters.js"></script>
+    <link rel="stylesheet" type="text/css" href="dcstyle.css">
   </head>
   <body>
     <h1>DC Comics Characters</h1>
@@ -17,10 +18,7 @@
         </p>
         <p>
           Down below you will be given the option to type in a character and read
-          about their backstory or you can have a random choice by hitting Random.
-        </p>
-        <p>
-          There will be a small quiz on what you learned about these characters.
+          about their backstory or you can have a random choice by hitting Random Character.
         </p>
       </div>
       <div style="float: right; width: 40%">
@@ -33,7 +31,7 @@
         </ul>
         <form>
           Character: <input type="text" id="characterName"><br>
-          <button type="button" id="doneButton" onclick="characterSelection();" >Done</button>
+          <button type="button" id="searchButton" onclick="characterSelection();" >Search</button>
           <p id="error"></p>
         </form>
         <button type="button" id="randomButton" onclick="randSelection();">Random Character</button>

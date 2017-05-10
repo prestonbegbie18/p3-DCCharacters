@@ -4,6 +4,7 @@
     <title>DC Comics Characters: Batman</title>
     <meta charset="UTF-8">
       <script type="text/javascript" src="characters.js"></script>
+      <link rel="stylesheet" type="text/css" href="dcstyle.css">
   </head>
   <body>
     <h1>Batman</h1>
@@ -16,12 +17,22 @@
           <li>Main opposition: The Joker and Gotham's Rogues</li>
           <li>Weaponry: Batarangs, tons of other gadgets, and fists</li>
           <li>Skills: Mixed Martial Arts and detective skills</li>
-          <li>1st Comic Book appearance: </li>
+          <li>1st Comic Book appearance: Detective Comics #27 in 1939</li>
+          <li>Info for comic origins found on: http://www.dccomics.com/characters/batman</li>
+          <li>Backstory was from my own knowledge of the character from movies, comics, games, and The Animated Series</li>
         </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/17/Batman-BenAffleck.jpg" alt="Batman in Batman v Superman" style="width:200px;height:200px;">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Batman-DC-Comics.jpg/250px-Batman-DC-Comics.jpg" alt="Batman in DC Comics" style="width:150px;height:259px;">
+        <p>
+          Image 1 source: https://upload.wikimedia.org/wikipedia/en/1/17/Batman-BenAffleck.jpg
+        </p>
+        <p>
+          Image 2 source: https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Batman-DC-Comics.jpg/250px-Batman-DC-Comics.jpg
+        </p>
       </div>
       <div style="float: right; width: 50%">
         <p>Backstory</p>
-        <p>
+        <p class="backstory">
           When he was 8 years old, Bruce Wayne witnessed his parents being murdered before
           his eyes. Since then, he vowed to take vengence against the criminal scum of Gotham.
           He went to study CSI in college and after that he trained in the mountains with monks
@@ -48,10 +59,11 @@
         </ul>
         <form>
           Character: <input type="text" id="characterName"><br>
-          <button type="button" id="doneButton" onclick="characterSelection();" >Done</button>
+          <button type="button" id="searchButton" onclick="characterSelection();" >Search</button>
           <p id="error"></p>
         </form>
         <button type="button" id="randomButton" onclick="randSelection();">Random Character</button>
+        <button type="button" id="homeButton" onclick="goHome();">Home</button>
       </div>
     </div>
   </body>

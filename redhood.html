@@ -4,6 +4,7 @@
     <title>DC Comics Characters: Red Hood</title>
     <meta charset="UTF-8">
     <script type="text/javascript" src="characters.js"></script>
+    <link rel="stylesheet" type="text/css" href="dcstyle.css">
   </head>
   <body>
     <h1>Red Hood</h1>
@@ -16,11 +17,24 @@
           <li>Main villain: The Joker and Batman's Rogues</li>
           <li>Weaponry: Dual Handguns and a knife</li>
           <li>Skills: Excellent in Hand to Hand combat</li>
+          <li>1st Comic Book appearance (Jason Todd): Batman #357 in 1983 </li>
+          <li>1st Comic Book appearance (Red Hood): Batman #635 in 2005</li>
+          <li>Info for comic origins found on: https://en.wikipedia.org/wiki/Jason_Todd</li>
+          <li>Backstory was from http://dc.wikia.com/wiki/Jason_Todd_(New_Earth) and myself</li>
         </ul>
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/6a/bc/63/6abc637efa6d82bc1ced243a2261ae24.gif" alt="Red Hood" style="width:200px;height:200px;">
+        <img src="http://vignette2.wikia.nocookie.net/steamtradingcards/images/0/0a/Batman_Arkham_Knight_Artwork_6.jpg/revision/latest?cb=20150628065319"
+        alt="Red Hood in Batman: Arkham Knight" style="width:300px;height:200px;">
+        <p>
+          Image 1 source: https://s-media-cache-ak0.pinimg.com/originals/6a/bc/63/6abc637efa6d82bc1ced243a2261ae24.gif
+        </p>
+        <p>
+          Image 2 source: http://vignette2.wikia.nocookie.net/steamtradingcards/images/0/0a/Batman_Arkham_Knight_Artwork_6.jpg/revision/latest?cb=20150628065319
+        </p>
       </div>
       <div style="float: right; width: 50%">
         <p>Backstory</p>
-        <p>
+        <p class="backstory">
           Jason Todd was Batman's second Robin after Dick Grayson left to take on his
           own crime fighting persona of Nightwing. Jason grew up in a troubled neighborhood.
           Jason's step-mom, Catherine Todd, died of a drug overdose and his father, Willis Todd,
@@ -51,15 +65,19 @@
             Fans are hoping for Todd to make his first big screen appearance in The Batman
           </li>
           <li>
+            For anyone wanting a movie version of Jason's origin, Batman: Under the Red Hood is the movie for you
+          </li>
+          <li>
             Fun fact: The Red Hood was the Joker before Jason took on the identity
           </li>
         </ul>
         <form>
           Character: <input type="text" id="characterName"><br>
-          <button type="button" id="doneButton" onclick="characterSelection();" >Done</button>
+          <button type="button" id="searchButton" onclick="characterSelection();" >Search</button>
           <p id="error"></p>
         </form>
         <button type="button" id="randomButton" onclick="randSelection();">Random Character</button>
+        <button type="button" id="homeButton" onclick="goHome();">Home</button>
       </div>
     </div>
   </body>

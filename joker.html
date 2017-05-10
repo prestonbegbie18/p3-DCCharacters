@@ -4,6 +4,7 @@
     <title>DC Comics Characters: The Joker</title>
     <meta charset="UTF-8">
       <script type="text/javascript" src="characters.js"></script>
+      <link rel="stylesheet" type="text/css" href="dcstyle.css">
   </head>
   <body>
     <h1>The Joker</h1>
@@ -16,11 +17,23 @@
           <li>Main opposition: The Bat Family and the Justice League</li>
           <li>Weaponry: Gag guns, Knives, and Joker toxin</li>
           <li>Skills: Mad genius to always mess with Batman</li>
+          <li>1st Comic Book appearance: Batman #1 in 1940</li>
+          <li>Info for comic origins found on: http://www.dccomics.com/characters/joker</li>
+          <li>Backstory comes from my memory of The Killing Joke</li>
         </ul>
+        <img src="https://i2.wp.com/cdn.batman-news.com/wp-content/uploads/2016/08/Joker-Jared-Leto-Purple-Lamborghini-Music-Video.jpg?fit=1200%2C514&quality=85&strip=info&ssl=1&resize=400%2C300"
+        alt="The Joker from Suicide Squad" style="width:300px;height:200px;">
+        <img src="http://cdn.inquisitr.com/wp-content/uploads/2016/05/Joker-Origin.jpg" alt="Killing Joke Cover Joker" style="width:350px;height:200px;">
+        <p>
+          Image 1 source: https://i2.wp.com/cdn.batman-news.com/wp-content/uploads/2016/08/Joker-Jared-Leto-Purple-Lamborghini-Music-Video.jpg?fit=1200%2C514&quality=85&strip=info&ssl=1&resize=400%2C300
+        </p>
+        <p>
+          Image 2 source: http://cdn.inquisitr.com/wp-content/uploads/2016/05/Joker-Origin.jpg
+        </p>
       </div>
       <div style="float: right; width: 50%">
         <p>Backstory</p>
-        <p>
+        <p class="backstory">
           The Joker was always a character of mystery. No one knew his true identity or
           what his backstory is. In the comic, "The Killing Joke" his backstory is hinted at.
           In the comic, he was a failed comedian who had a wife. They were going to have a
@@ -54,10 +67,11 @@
         </ul>
         <form>
           Character: <input type="text" id="characterName"><br>
-          <button type="button" id="doneButton" onclick="characterSelection();" >Done</button>
+          <button type="button" id="searchButton" onclick="characterSelection();" >Search</button>
           <p id="error"></p>
         </form>
         <button type="button" id="randomButton" onclick="randSelection();">Random Character</button>
+        <button type="button" id="homeButton" onclick="goHome();">Home</button>
       </div>
     </div>
   </body>

@@ -58,3 +58,8 @@ function characterSelection()
     document.getElementById("error").innerHTML = "That character might not exist here."
   }
 }
+
+function goHome()
+{
+  window.location.href="index.html";
+}

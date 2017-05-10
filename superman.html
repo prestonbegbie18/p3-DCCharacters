@@ -4,6 +4,7 @@
     <title>DC Comics Characters: Superman</title>
     <meta charset="UTF-8">
     <script type="text/javascript" src="characters.js"></script>
+    <link rel="stylesheet" type="text/css" href="dcstyle.css">
   </head>
   <body>
     <h1>Superman</h1>
@@ -16,12 +17,23 @@
           <li>Main opposition: Lex Luthor and many other big villains</li>
           <li>Weaponry: Superhuman powers</li>
           <li>Skills: None needed</li>
-          <li>1st Comic Book appearance: 1938 </li>
+          <li>1st Comic Book appearance: Action Comics #1 in 1938 </li>
+          <li>Info for comic origins found on: http://www.dccomics.com/characters/superman</li>
+          <li>Backstory from my years watching Superman: The Animated Series and Man of Steel (film)</li>
         </ul>
+        <img src="https://fsmedia.imgix.net/84/1b/5d/0a/bb92/4de9/89cc/85088214a4f2/superman-look-batman-v-superman-dawn-of-justice-galaxy-note-hd-wallpaperjpg.jpeg"
+        alt="Superman in Batman v Superman" style="width:200px;height:300px;">
+        <img src="http://comicsalliance.com/files/2015/07/new-52-superman-630x420.jpg" alt="Superman" style="width:300px;height:200px;">
+        <p>
+          Image 1 source: https://fsmedia.imgix.net/84/1b/5d/0a/bb92/4de9/89cc/85088214a4f2/superman-look-batman-v-superman-dawn-of-justice-galaxy-note-hd-wallpaperjpg.jpeg
+        </p>
+        <p>
+          Image 2 source: http://comicsalliance.com/files/2015/07/new-52-superman-630x420.jpg
+        </p>
       </div>
       <div style="float: right; width: 50%">
         <p>Backstory</p>
-        <p>
+        <p class="backstory">
           When Kal-El was born, Krypton was in the middle of a civil war and the planet
           was on the verge of blowing up. Kal's father and mother got him off planet before
           the planet exploded. Kal's pod landed in Kansas, the Kent Farm. Martha and Jonathan Kent
@@ -38,7 +50,8 @@
             Superman faced a major defeat by the hands of Doomsday in the Death of Superman
           </li>
           <li>
-            In Man of Steel, Superman knew that the only way to protect Earth was to get rid of Zod and his forces
+            In Man of Steel, Superman knew that the only way to protect Earth was to get rid of Zod and his forces by locking
+            them in the Phantom Zone
           </li>
           <li>
             In Batman v Superman, Superman gave his own life to save the world from Doomsday
@@ -52,10 +65,11 @@
         </ul>
         <form>
           Character: <input type="text" id="characterName"><br>
-          <button type="button" id="doneButton" onclick="characterSelection();" >Done</button>
+          <button type="button" id="searchButton" onclick="characterSelection();" >Search</button>
           <p id="error"></p>
         </form>
         <button type="button" id="randomButton" onclick="randSelection();">Random Character</button>
+        <button type="button" id="homeButton" onclick="goHome();">Home</button>
       </div>
     </div>
   </body>
